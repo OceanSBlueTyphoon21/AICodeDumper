@@ -1,3 +1,13 @@
 $ cd ~/catkin_ws
 $ catkin_make
 $ source devel/setup.bash
+
+To run the compiled cpp in ROS:
+$ rosrun c_scripts [name of cpp file without .cpp]
+
+EXAMPLE: $ rosrun c_scripts unit1_exercise
+
+
+TO COMPILE C++ and RUN CPP executables
+$ g++ -std=c++11 [name.cpp] -o [name]_compiled
+$ ./[name]_compiled
